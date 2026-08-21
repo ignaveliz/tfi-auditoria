@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@theme {
+  --color-corporate-navy: #0f172a;
+  --color-corporate-blue: #1e3a8a;
+  --color-corporate-gray: #f3f4f6;
+  --color-corporate-darkgray: #374151;
+  --color-corporate-accent: #3b82f6;
+}
+
+html {
+  scroll-behavior: smooth;
+}
