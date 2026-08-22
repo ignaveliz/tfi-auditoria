@@ -18,11 +18,21 @@ const CartaCompromiso = () => {
             Su suscripción por ambas partes constituye la aceptación de la propuesta y da inicio formal al trabajo.
           </p>
 
-          <h5 className="font-bold mt-6 mb-2 text-corporate-navy">Objeto del Trabajo</h5>
+          <h5 className="font-bold mt-6 mb-2 text-corporate-navy">Objeto y Naturaleza del Trabajo</h5>
           <p className="mb-4 text-justify">
             La Firma ejecutará un encargo de aseguramiento razonable. El trabajo no constituye una auditoría de estados contables, 
-            una certificación de seguridad, una prueba de intrusión ni un servicio de consultoría.
+            una certificación de seguridad, una prueba de intrusión ni un servicio de consultoría. El trabajo se estructura sobre tres objetivos de control: OC-1 (Continuidad y BIA), OC-2 (Resguardos y Recuperación), OC-3 (Seguridad Lógica en Contingencia). La firma emitirá opinión sobre el grado de cumplimiento de cada objetivo.
           </p>
+
+          <h5 className="font-bold mt-6 mb-2 text-corporate-navy">Responsabilidades de la Firma</h5>
+          <ul className="list-disc pl-5 space-y-2 mb-4">
+            <li>Ejecutar el encargo conforme a normas ISACA (ITAF) e ISO/IEC 19011.</li>
+            <li>Mantener independencia durante todo el encargo.</li>
+            <li>Asignar personal con competencia y certificaciones adecuadas.</li>
+            <li>Sustentar conclusiones en evidencia suficiente, relevante y competente.</li>
+            <li>Otorgar oportunidad de descargo antes de emitir el informe final.</li>
+            <li>Preservar confidencialidad de toda información recibida.</li>
+          </ul>
 
           <h5 className="font-bold mt-6 mb-2 text-corporate-navy">Responsabilidades de la Entidad</h5>
           <ul className="list-disc pl-5 space-y-2 mb-4">
@@ -30,12 +40,35 @@ const CartaCompromiso = () => {
             <li>Proveer, de manera completa y oportuna, la documentación detallada.</li>
             <li>Habilitar accesos de solo lectura a los sistemas comprendidos.</li>
             <li>Reconocer que la responsabilidad por el diseño e implementación del control interno es indelegable y permanece en cabeza de la Dirección de la Entidad.</li>
+            <li>Garantizar la veracidad y completitud de la información proporcionada.</li>
+            <li>Emitir carta de manifestaciones al cierre del encargo.</li>
+            <li>Reconocer que la responsabilidad por el control interno es indelegable.</li>
           </ul>
 
-          <h5 className="font-bold mt-6 mb-2 text-corporate-navy">Propiedad de los Papeles</h5>
+          <h5 className="font-bold mt-6 mb-2 text-corporate-navy">Limitaciones Inherentes</h5>
+          <p className="mb-4 text-justify">
+            El encargo proporciona seguridad razonable, no absoluta. Las limitaciones inherentes a todo trabajo de auditoría incluyen el uso de muestreo, la posibilidad de error humano y la eventualidad de connivencia para eludir controles. El dictamen no garantiza la detección de la totalidad de las debilidades existentes.
+          </p>
+
+          <h5 className="font-bold mt-6 mb-2 text-corporate-navy">Confidencialidad y Protección de Datos</h5>
+          <p className="mb-4 text-justify">
+            La información recibida durante el encargo será tratada bajo estricta confidencialidad, sin límite temporal. Los datos personales se tratarán conforme a la Ley 25.326, aplicando técnicas de disociación y enmascaramiento cuando corresponda.
+          </p>
+
+          <h5 className="font-bold mt-6 mb-2 text-corporate-navy">Propiedad y Conservación</h5>
           <p className="mb-4 text-justify">
             Los papeles de trabajo son propiedad de la Firma. Los informes emitidos son propiedad de la Entidad, 
-            que podrá utilizarlos libremente en su relación con el Banco Central (BCRA).
+            que podrá utilizarlos libremente en su relación con el Banco Central (BCRA). Los papeles de trabajo se conservarán en formato cifrado por un período de cinco años, durante el cual estarán disponibles para el BCRA si este lo requiriese. Transcurrido el plazo, se procederá a su destrucción certificada bajo acta.
+          </p>
+
+          <h5 className="font-bold mt-6 mb-2 text-corporate-navy">Honorarios y Plazos</h5>
+          <p className="mb-4 text-justify">
+            Los honorarios y plazos quedan sujetos a las condiciones establecidas en la propuesta técnica. Cualquier modificación deberá formalizarse por escrito. En caso de rescisión anticipada, la entidad abonará las horas efectivamente incurridas según las tarifas convenidas.
+          </p>
+
+          <h5 className="font-bold mt-6 mb-2 text-corporate-navy">Ley Aplicable y Jurisdicción</h5>
+          <p className="mb-4 text-justify">
+            El presente acuerdo se rige por las leyes de la República Argentina. Las partes se someten a la jurisdicción de los tribunales ordinarios de la Provincia de Tucumán, renunciando a todo otro fuero que pudiera corresponderles.
           </p>
 
           <div className="mt-16 flex justify-between">

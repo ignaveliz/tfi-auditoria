@@ -23,6 +23,7 @@ const CodigoEtica = () => {
             { title: 'Confidencialidad', desc: 'Uso exclusivo de la información para fines del encargo.' },
             { title: 'Competencia', desc: 'Asumir encargos solo con el conocimiento necesario.' },
             { title: 'Debido Cuidado', desc: 'Escepticismo y diligencia profesional.' },
+            { title: 'Conducta profesional', desc: 'Comportamiento acorde a las normas profesionales y la confianza depositada por el cliente.' },
           ].map((v, i) => (
             <div key={i} className="flex gap-3 items-start">
               <div className="mt-1 bg-corporate-accent h-2 w-2 rounded-full flex-shrink-0"></div>

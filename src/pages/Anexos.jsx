@@ -1,6 +1,6 @@
-import { FileText, PenTool } from 'lucide-react';
 import CartaCompromiso from '../components/anexos/CartaCompromiso';
 import CartaPresentacion from '../components/anexos/CartaPresentacion';
+import Acordeon from '../components/Acordeon';
 
 const Anexos = () => {
   return (
@@ -8,21 +8,13 @@ const Anexos = () => {
       <h1 className="text-3xl font-bold text-corporate-navy mb-8 border-b pb-4">Anexos y Archivos Formales</h1>
       
       <div className="space-y-12">
-        <section className="bg-white p-8 rounded-lg shadow-sm border border-gray-100">
-          <div className="flex items-center gap-3 mb-6 border-b pb-4">
-            <FileText className="h-8 w-8 text-corporate-blue" />
-            <h2 className="text-2xl font-bold text-corporate-navy">Carta de Presentación</h2>
-          </div>
+        <Acordeon title="Carta de Presentación">
           <CartaPresentacion />
-        </section>
+        </Acordeon>
 
-        <section className="bg-white p-8 rounded-lg shadow-sm border border-gray-100">
-          <div className="flex items-center gap-3 mb-6 border-b pb-4">
-            <PenTool className="h-8 w-8 text-corporate-blue" />
-            <h2 className="text-2xl font-bold text-corporate-navy">Carta Compromiso</h2>
-          </div>
+        <Acordeon title="Carta Compromiso">
           <CartaCompromiso />
-        </section>
+        </Acordeon>
       </div>
     </div>
   );
