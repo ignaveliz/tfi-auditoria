@@ -75,10 +75,18 @@ const Anexos = () => {
             </Acordeon>
             <Acordeon title="A2-II Control de completitud del Anexo I – estado de E-01 a E-16 al 02/07" disabled={true} />
             <Acordeon title="A2-III CEAC-2026-VAN-01 – 30 preguntas, 9 dimensiones, con evidencia y hallazgo" defaultOpen={false}>
-              <EvaluacionAmbiente />
+              <div className="mb-8">
+                <EvaluacionAmbiente />
+              </div>
+              <h3 className="text-xl font-bold text-corporate-navy mb-4 border-t pt-4">Documento Crudo (Evidencia original)</h3>
+              <iframe src="/documentos/CEAC_Credito_Facil.pdf" width="100%" height="800px" className="border border-gray-300 rounded shadow-sm" title="CEAC PDF" />
             </Acordeon>
-            <Acordeon title="A2-IV BCP v2.4 y DRP v1.0 (CF-BCP-2025-24 / CF-DRP-2024-10)" disabled={true} />
-            <Acordeon title="A2-V BIA v1.2 (CF-BIA-2026-01)" disabled={true} />
+            <Acordeon title="A2-IV BCP v2.4 y DRP v1.0 (CF-BCP-2025-24 / CF-DRP-2024-10)" defaultOpen={false}>
+              <iframe src="/documentos/BCP_DRP_Credito_Facil.pdf" width="100%" height="800px" className="border border-gray-300 rounded shadow-sm" title="BCP DRP PDF" />
+            </Acordeon>
+            <Acordeon title="A2-V BIA v1.2 (CF-BIA-2026-01)" defaultOpen={false}>
+              <iframe src="/documentos/BIA_Credito_Facil.pdf" width="100%" height="800px" className="border border-gray-300 rounded shadow-sm" title="BIA PDF" />
+            </Acordeon>
             <Acordeon title="A2-VI Matriz de riesgos de auditoría RA-01 a RA-14" defaultOpen={false}>
               <MatrizRiesgos />
             </Acordeon>
