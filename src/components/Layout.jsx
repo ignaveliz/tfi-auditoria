@@ -19,7 +19,7 @@ const Layout = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center gap-2">
-              <ShieldCheck className="h-8 w-8 text-corporate-accent" />
+              <ShieldCheck className="h-8 w-8 text-yellow-500" />
               <div>
                 <h1 className="font-bold text-xl leading-none tracking-wider">VANGUARD</h1>
                 <p className="text-[10px] text-gray-400 tracking-widest uppercase">IT Audit Group</p>

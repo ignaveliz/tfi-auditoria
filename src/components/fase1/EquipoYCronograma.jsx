@@ -86,7 +86,7 @@ const EquipoYCronograma = () => {
                 <td className="px-3 py-2 text-right text-gray-600">$5.783.916,00</td>
               </tr>
               <tr>
-                <td className="px-3 py-2 font-medium">Leandro Agustín Villanueva</td>
+                <td className="px-3 py-2 font-medium">Nadia Enoa Rizo Avalos</td>
                 <td className="px-3 py-2 text-gray-600">Técnico (Configuraciones)</td>
                 <td className="px-3 py-2 text-gray-600">Configuraciones DRP y pistas de auditoría</td>
                 <td className="px-3 py-2 text-center">60 h</td>
@@ -137,7 +137,7 @@ const EquipoYCronograma = () => {
               </ul>
             </div>
             <div>
-              <h5 className="font-bold text-corporate-blue">Equipo Técnico – César Tomás Delgado, Leopoldo Gabriel Samaniego, Leandro Agustín Villanueva</h5>
+              <h5 className="font-bold text-corporate-blue">Equipo Técnico – César Tomás Delgado, Leopoldo Gabriel Samaniego, Nadia Enoa Rizo Avalos</h5>
               <ul className="list-disc pl-5 text-sm space-y-1">
                 <li>Revisión técnica de arquitectura (sitio alternativo, nube, replicación).</li>
                 <li>Analizar configuraciones de seguridad lógica y repositorios IAM.</li>
