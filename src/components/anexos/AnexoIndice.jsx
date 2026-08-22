@@ -17,35 +17,35 @@ const AnexoIndice = () => {
               <td className="px-3 py-2 font-medium">PT-OC1-01</td>
               <td className="px-3 py-2 text-gray-700">Vigencia y aprobación del BCP</td>
               <td className="px-3 py-2 text-center text-gray-500">OC-1</td>
-              <td className="px-3 py-2 text-red-600 font-medium">Deficiente</td>
+              <td className="px-3 py-2 text-red-600 font-medium">No adecuado</td>
               <td className="px-3 py-2 text-gray-700">PT-OBS-01</td>
             </tr>
             <tr>
               <td className="px-3 py-2 font-medium">PT-OC1-02</td>
               <td className="px-3 py-2 text-gray-700">Definición y aprobación formal de MTPD, RTO y RPO</td>
               <td className="px-3 py-2 text-center text-gray-500">OC-1</td>
-              <td className="px-3 py-2 text-red-600 font-medium">Deficiente</td>
+              <td className="px-3 py-2 text-red-600 font-medium">No adecuado</td>
               <td className="px-3 py-2 text-gray-700">PT-OBS-02</td>
             </tr>
             <tr>
               <td className="px-3 py-2 font-medium">PT-OC1-03</td>
               <td className="px-3 py-2 text-gray-700">Aprobación, cobertura y suficiencia técnica del DRP</td>
               <td className="px-3 py-2 text-center text-gray-500">OC-1</td>
-              <td className="px-3 py-2 text-red-600 font-medium">Deficiente</td>
+              <td className="px-3 py-2 text-red-600 font-medium">No adecuado</td>
               <td className="px-3 py-2 text-gray-700">PT-OBS-03</td>
             </tr>
             <tr>
               <td className="px-3 py-2 font-medium">PT-OC1-04</td>
               <td className="px-3 py-2 text-gray-700">Ejercicio integral de continuidad</td>
               <td className="px-3 py-2 text-center text-gray-500">OC-1</td>
-              <td className="px-3 py-2 text-red-600 font-medium">Deficiente</td>
+              <td className="px-3 py-2 text-red-600 font-medium">No adecuado</td>
               <td className="px-3 py-2 text-gray-700">PT-OBS-04</td>
             </tr>
             <tr>
               <td className="px-3 py-2 font-medium">PT-OC1-05</td>
               <td className="px-3 py-2 text-gray-700">Evaluación de los tres escenarios de contingencia</td>
               <td className="px-3 py-2 text-center text-gray-500">OC-1</td>
-              <td className="px-3 py-2 text-red-600 font-medium">Deficiente</td>
+              <td className="px-3 py-2 text-red-600 font-medium">No adecuado</td>
               <td className="px-3 py-2 text-gray-700 text-xs">PT-OBS-03, 04, 06</td>
             </tr>
             <tr>
@@ -59,7 +59,7 @@ const AnexoIndice = () => {
               <td className="px-3 py-2 font-medium">PT-OC2-03</td>
               <td className="px-3 py-2 text-gray-700">Prueba técnica de restauración</td>
               <td className="px-3 py-2 text-center text-gray-500">OC-2</td>
-              <td className="px-3 py-2 text-red-600 font-medium">Deficiente</td>
+              <td className="px-3 py-2 text-red-600 font-medium">No adecuado</td>
               <td className="px-3 py-2 text-gray-700">PT-OBS-06</td>
             </tr>
             <tr>
@@ -73,7 +73,7 @@ const AnexoIndice = () => {
               <td className="px-3 py-2 font-medium">PT-OC3-02</td>
               <td className="px-3 py-2 text-gray-700">Gestión de cuentas de acceso de emergencia (break-glass)</td>
               <td className="px-3 py-2 text-center text-gray-500">OC-3</td>
-              <td className="px-3 py-2 text-red-600 font-medium">Deficiente</td>
+              <td className="px-3 py-2 text-red-600 font-medium">No adecuado</td>
               <td className="px-3 py-2 text-gray-700">PT-OBS-07</td>
             </tr>
             <tr className="bg-blue-50">
@@ -83,7 +83,7 @@ const AnexoIndice = () => {
               <td className="px-3 py-2 font-medium">PT-XC-01</td>
               <td className="px-3 py-2 text-gray-700">Consistencia documental BIA – BCP – DRP</td>
               <td className="px-3 py-2 text-center text-gray-500">Transv.</td>
-              <td className="px-3 py-2 text-red-600 font-medium">Deficiente</td>
+              <td className="px-3 py-2 text-red-600 font-medium">No adecuado</td>
               <td className="px-3 py-2 text-gray-700 text-xs">PT-OBS-02, 03</td>
             </tr>
             <tr>
