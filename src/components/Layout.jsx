@@ -9,6 +9,7 @@ const Layout = () => {
     { id: 4, path: '/fase4', label: 'Fase 4' },
     { id: 5, path: '/fase5', label: 'Fase 5' },
     { id: 6, path: '/fase6', label: 'Fase 6' },
+    { id: 'anexos', path: '/anexos', label: 'Anexos' },
   ];
 
   return (

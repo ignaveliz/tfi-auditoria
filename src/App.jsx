@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Layout from './components/Layout';
 import Fase1 from './pages/Fase1';
-// Las demás fases se agregarán en el futuro
+import Anexos from './pages/Anexos';
 
 function App() {
   return (
@@ -10,6 +10,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Navigate to="/fase1" replace />} />
           <Route path="fase1" element={<Fase1 />} />
+          <Route path="anexos" element={<Anexos />} />
           {/* Mock routes para las otras fases */}
           <Route path="fase2" element={<div className="p-10 text-center"><h1 className="text-3xl text-corporate-blue font-bold">Fase 2 - En Desarrollo</h1></div>} />
           <Route path="fase3" element={<div className="p-10 text-center"><h1 className="text-3xl text-corporate-blue font-bold">Fase 3 - En Desarrollo</h1></div>} />
