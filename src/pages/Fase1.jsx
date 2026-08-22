@@ -4,7 +4,6 @@ import CodigoEtica from '../components/fase1/CodigoEtica';
 import ComprensionCliente from '../components/fase1/ComprensionCliente';
 import AlcanceYMetodologia from '../components/fase1/AlcanceYMetodologia';
 import EquipoYCronograma from '../components/fase1/EquipoYCronograma';
-import CartaCompromiso from '../components/fase1/CartaCompromiso';
 
 const Fase1 = () => {
   const [activeSection, setActiveSection] = useState('presentacion');
@@ -14,8 +13,7 @@ const Fase1 = () => {
     { id: 'etica', title: '2. Código de Ética' },
     { id: 'cliente', title: '3. Comprensión del Cliente' },
     { id: 'alcance', title: '4. Alcance y Metodología' },
-    { id: 'equipo', title: '5. Equipo y Cronograma' },
-    { id: 'compromiso', title: '6. Carta Compromiso' }
+    { id: 'equipo', title: '5. Equipo y Cronograma' }
   ];
 
   useEffect(() => {
@@ -99,10 +97,6 @@ const Fase1 = () => {
 
         <section id="equipo" className="scroll-mt-24 bg-white p-8 rounded-lg shadow-sm border border-gray-100">
           <EquipoYCronograma />
-        </section>
-
-        <section id="compromiso" className="scroll-mt-24 bg-white p-8 rounded-lg shadow-sm border border-gray-100">
-          <CartaCompromiso />
         </section>
         
       </div>

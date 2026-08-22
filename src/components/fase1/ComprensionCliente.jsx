@@ -1,4 +1,6 @@
-import { Search, ServerCrash, Landmark } from 'lucide-react';
+import { Search, ServerCrash, Landmark, Network } from 'lucide-react';
+import Organigrama from './Organigrama';
+import Acordeon from '../Acordeon';
 
 const ComprensionCliente = () => {
   return (
@@ -18,6 +20,12 @@ const ComprensionCliente = () => {
             hacia una banca predominantemente virtual (24 horas, automatización, IA).
           </p>
         </div>
+
+        <h3 className="text-xl font-bold text-corporate-navy mb-4 border-b pb-2 flex items-center gap-2">
+          <Network className="h-5 w-5" /> Estructura Organizacional
+        </h3>
+        <p className="text-sm mb-2 text-gray-500">Haz clic en las flechas para expandir o contraer las distintas áreas.</p>
+        <Organigrama />
 
         <h3 className="text-xl font-bold text-corporate-navy mb-4 border-b pb-2">Contexto Institucional y Riesgo</h3>
         <p className="mb-6">
@@ -66,7 +74,7 @@ const ComprensionCliente = () => {
         </div>
 
         <h3 className="text-xl font-bold text-corporate-navy mb-4 border-b pb-2">Dependencias Sistémicas (Puntos únicos de falla)</h3>
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-2 gap-6 mb-8">
           <div className="border border-gray-200 p-4 rounded-md shadow-sm">
             <h4 className="font-bold text-corporate-blue flex items-center gap-2 mb-2">
               <ServerCrash className="h-5 w-5" /> Gestión de Accesos (IAM)
@@ -84,6 +92,52 @@ const ComprensionCliente = () => {
             </p>
           </div>
         </div>
+
+        <Acordeon title="Factores de Riesgo que fundamentan el trabajo (Pre-relevamiento)">
+          <div className="overflow-x-auto">
+            <table className="min-w-full divide-y divide-gray-200 text-sm border">
+              <thead className="bg-gray-100">
+                <tr>
+                  <th className="px-3 py-2 text-left font-bold text-corporate-navy">Condición observada (Pre-relevamiento)</th>
+                  <th className="px-3 py-2 text-left font-bold text-corporate-navy">Riesgo asociado</th>
+                  <th className="px-3 py-2 text-left font-bold text-corporate-navy">OC</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-200">
+                <tr>
+                  <td className="px-3 py-2">El BCP registra su última modificación 14 meses atrás, excediendo el ciclo de revisión anual (Com. A 7777).</td>
+                  <td className="px-3 py-2">Planes desactualizados frente a cambios de arquitectura; incumplimiento normativo.</td>
+                  <td className="px-3 py-2 font-bold">OC-1</td>
+                </tr>
+                <tr>
+                  <td className="px-3 py-2">El proceso P2 presenta el RPO sin definir y el RTO sin aprobación formal.</td>
+                  <td className="px-3 py-2">Imposibilidad de dimensionar estrategia de resguardo y exigir SLA a TI.</td>
+                  <td className="px-3 py-2 font-bold">OC-1/2</td>
+                </tr>
+                <tr>
+                  <td className="px-3 py-2">No hay constancia de prueba de restauración documentada en los últimos 12 meses.</td>
+                  <td className="px-3 py-2">Tiempos declarados no validados; el RTO podría ser inalcanzable.</td>
+                  <td className="px-3 py-2 font-bold">OC-1/2</td>
+                </tr>
+                <tr>
+                  <td className="px-3 py-2">BIA reconoce IAM como riesgo sistémico, pero no lo incorpora como proceso.</td>
+                  <td className="px-3 py-2">Prioridad de recuperación de dependencia transversal no gobernada.</td>
+                  <td className="px-3 py-2 font-bold">OC-1/3</td>
+                </tr>
+                <tr>
+                  <td className="px-3 py-2">Procedimientos operativos desactualizados (+18 meses) respecto de arquitectura.</td>
+                  <td className="px-3 py-2">Ejecución de contingencias sobre instructivos obsoletos.</td>
+                  <td className="px-3 py-2 font-bold">OC-1/3</td>
+                </tr>
+                <tr>
+                  <td className="px-3 py-2">BCP prevé contingencia remota con VPN y MFA.</td>
+                  <td className="px-3 py-2">Riesgo de entorno operando con controles de acceso relajados.</td>
+                  <td className="px-3 py-2 font-bold">OC-3</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </Acordeon>
       </div>
     </div>
   );

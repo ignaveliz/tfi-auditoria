@@ -1,16 +1,8 @@
-import { PenTool } from 'lucide-react';
-
 const CartaCompromiso = () => {
   return (
-    <div>
-      <div className="flex items-center gap-3 mb-6">
-        <PenTool className="h-8 w-8 text-corporate-blue" />
-        <h2 className="text-2xl font-bold text-corporate-navy">6. Carta Compromiso</h2>
-      </div>
+    <div className="prose max-w-none text-gray-700">
+      <div className="bg-white border border-gray-300 p-8 shadow-inner font-serif text-sm">
 
-      <div className="prose max-w-none text-gray-700">
-        
-        <div className="bg-white border border-gray-300 p-8 shadow-inner font-serif text-sm">
           <p className="text-right mb-6">San Miguel de Tucumán, 24 de junio de 2026</p>
           <p className="mb-6">
             <strong>Señores</strong><br/>
@@ -59,8 +51,6 @@ const CartaCompromiso = () => {
               <p className="text-xs text-gray-500">Financiera Crédito Fácil S.A.</p>
             </div>
           </div>
-
-        </div>
 
       </div>
     </div>
