@@ -17,7 +17,7 @@ const ObjetoEncuadre = () => {
         </p>
 
         <h3 className="text-lg font-bold text-corporate-navy mb-3">1.1 Insumos de las fases anteriores</h3>
-        <ul className="list-disc pl-6 mb-6">
+        <ul className="list-disc pl-5 mb-6">
           <li><strong>Fase 1 — Propuesta de Auditoría:</strong> Objetivos de control, alcance, criterios normativos y compromiso de emitir entre 5 y 8 observaciones y entre 3 y 5 controles adecuados.</li>
           <li><strong>Fase 2 — Planificación y CEAC:</strong> Nivel de confianza de 76,67% — ALTO, matriz de riesgos de auditoría RA-01 a RA-14 y programa de procedimientos PA-01 a PA-15.</li>
           <li><strong>Fases 3 y 4 — Papeles de trabajo:</strong> 14 papeles de ejecución, 7 papeles de observación y el índice de evidencia EV-01 a EV-13.</li>

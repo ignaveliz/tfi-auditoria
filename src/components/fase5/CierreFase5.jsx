@@ -71,7 +71,7 @@ const CierreFase5 = () => {
       </div>
 
       {/* 8. Limitaciones al alcance */}
-      <div className="mb-12">
+      <div className="mt-6 mb-12">
         <div className="flex items-center gap-3 mb-6">
           <AlertOctagon className="h-8 w-8 text-corporate-blue" />
           <h2 className="text-2xl font-bold text-corporate-navy">8. Limitaciones al alcance</h2>
@@ -81,7 +81,7 @@ const CierreFase5 = () => {
           <p className="mb-4">
             Se deja constancia de las condiciones sobre las cuales no fue posible concluir por no haberse obtenido evidencia suficiente. Su tratamiento como limitación, y no como observación, responde al principio de que la auditoría no puede afirmar la existencia de una deficiencia cuando lo único acreditado es la ausencia de información.
           </p>
-          <ul className="list-disc pl-6">
+          <ul className="list-disc pl-5">
             <li className="mb-2"><strong>D-15 (CEAC 25):</strong> Sin evidencia de seguimiento de hallazgos de auditorías previas.</li>
             <li className="mb-2"><strong>D-16 (CEAC 30):</strong> Sin medición de efectividad del programa de concientización.</li>
             <li><strong>D-19 (PT-OC2-02):</strong> El sitio alternativo no acredita prueba de aislamiento frente a software malicioso.</li>
@@ -90,7 +90,7 @@ const CierreFase5 = () => {
       </div>
 
       {/* 9. Conclusión de la fase */}
-      <div>
+      <div className="mt-6">
         <div className="flex items-center gap-3 mb-6">
           <PenTool className="h-8 w-8 text-corporate-blue" />
           <h2 className="text-2xl font-bold text-corporate-navy">9. Conclusión de la fase</h2>

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import ObjetoEncuadre from '../components/fase5/ObjetoEncuadre';
 import CriteriosSeleccion from '../components/fase5/CriteriosSeleccion';
 import Trazabilidad from '../components/fase5/Trazabilidad';
@@ -23,16 +23,17 @@ const Fase5 = () => {
   useEffect(() => {
     const handleScroll = () => {
       const sectionElements = sections.map(s => document.getElementById(s.id));
-      const currentScrollPosition = window.scrollY + 150; // Offset for header
+      let currentSection = sections[0].id;
 
-      let currentActiveSection = sections[0].id;
-      for (let i = 0; i < sectionElements.length; i++) {
-        const element = sectionElements[i];
-        if (element && element.offsetTop <= currentScrollPosition) {
-          currentActiveSection = sections[i].id;
+      for (const section of sectionElements) {
+        if (section) {
+          const rect = section.getBoundingClientRect();
+          if (rect.top <= 150) {
+            currentSection = section.id;
+          }
         }
       }
-      setActiveSection(currentActiveSection);
+      setActiveSection(currentSection);
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -42,76 +43,73 @@ const Fase5 = () => {
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
     if (element) {
-      window.scrollTo({
-        top: element.offsetTop - 80, // Leave some space at top
-        behavior: 'smooth'
-      });
+      const y = element.getBoundingClientRect().top + window.scrollY - 80;
+      window.scrollTo({ top: y, behavior: 'smooth' });
     }
   };
 
   return (
-    <div className="flex bg-gray-50 min-h-screen">
-      {/* Sidebar de navegación */}
-      <div className="w-1/4 hidden md:block border-r border-gray-200 bg-white min-h-screen sticky top-0 h-screen overflow-y-auto">
-        <div className="p-6">
-          <h2 className="text-xl font-bold text-corporate-navy mb-6">Índice Fase 5</h2>
-          <nav className="space-y-1">
-            {sections.map((section) => (
-              <button
-                key={section.id}
-                onClick={() => scrollToSection(section.id)}
-                className={`w-full text-left px-4 py-3 text-sm rounded-lg transition-colors ${
-                  activeSection === section.id
-                    ? 'bg-corporate-blue text-white font-medium shadow-md'
-                    : 'text-gray-600 hover:bg-gray-100'
-                }`}
-              >
-                {section.title}
-              </button>
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col md:flex-row gap-8">
+      
+      {/* Sidebar de Navegación */}
+      <aside className="md:w-1/4 flex-shrink-0">
+        <div className="sticky top-24 bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+          <h3 className="text-lg font-bold text-corporate-navy mb-4 border-b pb-2">Contenido Fase 5</h3>
+          <ul className="space-y-2">
+            {sections.map(section => (
+              <li key={section.id}>
+                <button
+                  onClick={() => scrollToSection(section.id)}
+                  className={`text-left w-full text-sm py-1.5 px-3 rounded-md transition-colors ${
+                    activeSection === section.id
+                      ? 'bg-corporate-blue text-white font-medium'
+                      : 'text-gray-600 hover:bg-gray-100'
+                  }`}
+                >
+                  {section.title}
+                </button>
+              </li>
             ))}
-          </nav>
+          </ul>
         </div>
-      </div>
+      </aside>
 
-      {/* Contenido principal */}
-      <div className="flex-1 max-w-4xl px-8 py-10">
-        <div className="mb-10">
-          <h1 className="text-4xl font-bold text-corporate-navy mb-2">FASE 5</h1>
-          <h2 className="text-2xl text-gray-600 font-light">Selección y Formalización de Observaciones</h2>
-          <p className="mt-4 text-sm text-gray-500 bg-white p-4 rounded shadow-sm border-l-4 border-corporate-blue">
-            Matriz de selección · 7 fichas NCCCE · 5 controles adecuados
-          </p>
-        </div>
-
-        <div className="space-y-16">
-          <section id="objeto-encuadre">
+      {/* Contenido de las Secciones */}
+      <div className="md:w-3/4 space-y-12">
+        
+        <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-100">
+          <h1 className="text-3xl font-bold text-corporate-navy mb-2">Fase 5: Selección de Observaciones</h1>
+          <p className="text-gray-500 mb-6 pb-6 border-b">Matriz de selección · 7 fichas NCCCE · 5 controles adecuados</p>
+          
+          <section id="objeto-encuadre" className="scroll-mt-24 pt-4">
             <ObjetoEncuadre />
           </section>
-
-          <section id="criterios-seleccion">
-            <CriteriosSeleccion />
-          </section>
-
-          <section id="trazabilidad">
-            <Trazabilidad />
-          </section>
-
-          <section id="matriz-seleccion">
-            <MatrizSeleccion />
-          </section>
-
-          <section id="fichas-observaciones">
-            <FichasObservaciones />
-          </section>
-
-          <section id="controles-adecuados">
-            <ControlesAdecuados />
-          </section>
-
-          <section id="cierre-fase">
-            <CierreFase5 />
-          </section>
         </div>
+
+        <section id="criterios-seleccion" className="scroll-mt-24 bg-white p-8 rounded-lg shadow-sm border border-gray-100">
+          <CriteriosSeleccion />
+        </section>
+
+        <section id="trazabilidad" className="scroll-mt-24 bg-white p-8 rounded-lg shadow-sm border border-gray-100">
+          <Trazabilidad />
+        </section>
+
+        <section id="matriz-seleccion" className="scroll-mt-24 bg-white p-8 rounded-lg shadow-sm border border-gray-100">
+          <MatrizSeleccion />
+        </section>
+
+        <section id="fichas-observaciones" className="scroll-mt-24 bg-white p-8 rounded-lg shadow-sm border border-gray-100">
+          <FichasObservaciones />
+        </section>
+        
+        <section id="controles-adecuados" className="scroll-mt-24 bg-white p-8 rounded-lg shadow-sm border border-gray-100">
+          <ControlesAdecuados />
+        </section>
+
+        <section id="cierre-fase" className="scroll-mt-24 bg-white p-8 rounded-lg shadow-sm border border-gray-100">
+          <CierreFase5 />
+        </section>
+        
       </div>
     </div>
   );
