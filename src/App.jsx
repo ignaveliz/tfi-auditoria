@@ -6,6 +6,7 @@ import Anexos from './pages/Anexos';
 import Fase3 from './pages/Fase3';
 import Fase4 from './pages/Fase4';
 import Fase5 from './pages/Fase5';
+import Fase6 from './pages/Fase6';
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
           <Route path="fase3" element={<Fase3 />} />
           <Route path="fase4" element={<Fase4 />} />
           <Route path="fase5" element={<Fase5 />} />
-          <Route path="fase6" element={<div className="p-10 text-center"><h1 className="text-3xl text-corporate-blue font-bold">Fase 6 - En Desarrollo</h1></div>} />
+          <Route path="fase6" element={<Fase6 />} />
         </Route>
       </Routes>
     </Router>
