@@ -1,14 +1,12 @@
 import { useState, useEffect } from 'react';
 import ResumenEjecutivo from '../components/fase6/ResumenEjecutivo';
 import InformeDetallado from '../components/fase6/InformeDetallado';
-import AnexosFase6 from '../components/fase6/AnexosFase6';
 
 const Fase6 = () => {
   const [activeTab, setActiveTab] = useState('resumen');
   const [activeSection, setActiveSection] = useState('');
 
   const resumenSections = [
-    { id: 'a1-carta', title: 'A.1 Carta de elevación' },
     { id: 'a2-proposito', title: 'A.2 Propósito y alcance' },
     { id: 'a3-conclusion', title: 'A.3 Conclusión general' },
     { id: 'a4-cuadro', title: 'A.4 Cuadro resumen' },
@@ -18,7 +16,6 @@ const Fase6 = () => {
   ];
 
   const detalladoSections = [
-    { id: 'b1-carta', title: 'B.1 Carta técnica' },
     { id: 'b2-antecedentes', title: 'B.2 Antecedentes' },
     { id: 'b3-alcance', title: 'B.3 Alcance y limitaciones' },
     { id: 'b4-metodologia', title: 'B.4 Metodología' },
@@ -32,17 +29,7 @@ const Fase6 = () => {
     { id: 'b12-cierre', title: 'B.12 Cierre del encargo' },
   ];
 
-  const anexosSections = [
-    { id: 'anexo1', title: 'Anexo I - Trazabilidad' },
-    { id: 'anexo2', title: 'Anexo II - Papeles' },
-    { id: 'anexo3', title: 'Anexo III - Reconciliación' }
-  ];
-
-  const currentSections = activeTab === 'resumen' 
-    ? resumenSections 
-    : activeTab === 'detallado' 
-      ? detalladoSections 
-      : anexosSections;
+  const currentSections = activeTab === 'resumen' ? resumenSections : detalladoSections;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -123,20 +110,11 @@ const Fase6 = () => {
             >
               Parte B - Informe Detallado
             </button>
-            <button
-              onClick={() => { setActiveTab('anexos'); window.scrollTo({ top: 0 }); }}
-              className={`flex-1 py-2 px-4 rounded-md text-sm font-medium transition-colors ${
-                activeTab === 'anexos' ? 'bg-white text-corporate-navy shadow' : 'text-gray-500 hover:text-gray-700'
-              }`}
-            >
-              Anexos
-            </button>
           </div>
         </div>
 
         {activeTab === 'resumen' && <ResumenEjecutivo />}
         {activeTab === 'detallado' && <InformeDetallado />}
-        {activeTab === 'anexos' && <AnexosFase6 />}
         
       </div>
     </div>
