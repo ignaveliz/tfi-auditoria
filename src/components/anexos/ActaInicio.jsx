@@ -3,19 +3,18 @@ import { FileText, Users, CheckSquare } from 'lucide-react';
 const ActaInicio = () => {
   return (
     <div>
-      <div className="flex items-center gap-3 mb-2">
+      <div className="flex items-center gap-3 mb-6">
         <FileText className="h-8 w-8 text-corporate-blue" />
         <h2 className="text-2xl font-bold text-corporate-navy">1. Acta de inicio del encargo</h2>
       </div>
-      
-      <div className="flex justify-end mb-6">
-        <img src="/logos/vanguard-logo-horizontal.svg" alt="Vanguard Logo" className="h-10 opacity-70" />
-      </div>
 
       <div className="prose max-w-none text-gray-700">
-        <p className="mb-4">
-          En la ciudad de San Miguel de Tucumán, a los <strong>25 días del mes de junio de 2026</strong>, siendo las 9:00 horas, en la sede de Financiera Crédito Fácil S.A., se reúnen las personas que se detallan a continuación con el objeto de dar inicio formal a los trabajos de auditoría de controles generales de TI sobre el marco de resiliencia operativa de la entidad.
-        </p>
+        <div className="flex justify-between items-start mb-4 gap-4">
+          <p className="m-0">
+            En la ciudad de San Miguel de Tucumán, a los <strong>25 días del mes de junio de 2026</strong>, siendo las 9:00 horas, en la sede de Financiera Crédito Fácil S.A., se reúnen las personas que se detallan a continuación con el objeto de dar inicio formal a los trabajos de auditoría de controles generales de TI sobre el marco de resiliencia operativa de la entidad.
+          </p>
+          <img src="/logos/vanguard-logo-horizontal.svg" alt="Vanguard Logo" className="h-28 opacity-30 grayscale pointer-events-none shrink-0" />
+        </div>
 
         <h3 className="text-xl font-bold text-corporate-navy mt-6 mb-4 flex items-center gap-2 border-b pb-2">
           <Users className="h-5 w-5" /> 1.1 Asistentes

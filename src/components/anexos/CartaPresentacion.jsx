@@ -2,16 +2,16 @@ const CartaPresentacion = () => {
   return (
     <div className="prose max-w-none text-gray-700">
       <div className="bg-white border border-gray-300 p-8 shadow-inner font-serif text-sm">
-        <p className="text-right mb-2">San Miguel de Tucumán, 20 de junio de 2026</p>
-        <div className="flex justify-end mb-6">
-          <img src="/logos/vanguard-logo-horizontal.svg" alt="Vanguard Logo" className="h-10 opacity-70" />
+        <p className="text-right mb-6">San Miguel de Tucumán, 20 de junio de 2026</p>
+        <div className="flex justify-between items-start mb-6">
+          <p className="m-0">
+            <strong>Señores</strong><br/>
+            Directorio y Gerencia General<br/>
+            Financiera Crédito Fácil S.A.<br/>
+            S / D
+          </p>
+          <img src="/logos/vanguard-logo-horizontal.svg" alt="Vanguard Logo" className="h-28 opacity-30 grayscale pointer-events-none" />
         </div>
-        <p className="mb-6">
-          <strong>Señores</strong><br/>
-          Directorio y Gerencia General<br/>
-          Financiera Crédito Fácil S.A.<br/>
-          S / D
-        </p>
 
         <p className="mb-4 font-bold">De nuestra mayor consideración:</p>
         <p className="mb-4 text-justify">

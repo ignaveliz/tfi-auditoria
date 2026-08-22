@@ -8,16 +8,19 @@ const CartaPresentacionFase6 = () => {
         <h3 className="text-xl font-bold text-corporate-navy m-0">B.1 Carta de presentación técnica</h3>
       </div>
       
-      <p className="text-right text-sm text-gray-500 mb-2">San Miguel de Tucumán, 28 de julio de 2026</p>
-      <div className="flex justify-end mb-4">
-        <img src="/logos/vanguard-logo-horizontal.svg" alt="Vanguard Logo" className="h-8 opacity-70" />
+      <p className="text-right text-sm text-gray-500 mb-4">San Miguel de Tucumán, 28 de julio de 2026</p>
+      
+      <div className="flex justify-between items-start mb-4">
+        <p className="font-bold m-0">
+          Señor<br/>
+          Gerente de Operaciones y Tecnología<br/>
+          Señor Responsable de Seguridad de la Información (CISO)<br/>
+          Financiera Crédito Fácil S.A.<br/>
+          S / D
+        </p>
+        <img src="/logos/vanguard-logo-horizontal.svg" alt="Vanguard Logo" className="h-28 opacity-30 grayscale pointer-events-none" />
       </div>
-      <p className="font-bold mb-4">
-        Señor<br/>
-        Gerente de Operaciones y Tecnología<br/>
-        Señor Responsable de Seguridad de la Información (CISO)<br/>
-        Financiera Crédito Fácil S.A.
-      </p>
+
       <p className="mb-4">
         Se remite la Parte B del informe de auditoría del marco de resiliencia operativa, correspondiente al período 01/06/2025 – 30/06/2026. El documento desarrolla el fundamento técnico de las siete observaciones elevadas, la evaluación de los tres escenarios de contingencia acordados, la documentación de los cinco controles que operan adecuadamente y el plan de acción sugerido con responsables, plazos y prioridades.
       </p>

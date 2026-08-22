@@ -8,16 +8,17 @@ const CartaElevacionFase6 = () => {
         <h3 className="text-xl font-bold text-corporate-navy m-0">A.1 Carta de elevación del informe</h3>
       </div>
       
-      <p className="text-right text-sm text-gray-500 mb-2">San Miguel de Tucumán, 28 de julio de 2026</p>
-      <div className="flex justify-end mb-4">
-        <img src="/logos/vanguard-logo-horizontal.svg" alt="Vanguard Logo" className="h-8 opacity-70" />
+      <p className="text-right text-sm text-gray-500 mb-4">San Miguel de Tucumán, 28 de julio de 2026</p>
+      
+      <div className="flex justify-between items-start mb-4">
+        <p className="font-bold m-0">
+          Señores<br/>
+          Directorio y Gerencia General<br/>
+          Financiera Crédito Fácil S.A.<br/>
+          S / D
+        </p>
+        <img src="/logos/vanguard-logo-horizontal.svg" alt="Vanguard Logo" className="h-28 opacity-30 grayscale pointer-events-none" />
       </div>
-      <p className="font-bold mb-4">
-        Señores<br/>
-        Directorio y Gerencia General<br/>
-        Financiera Crédito Fácil S.A.<br/>
-        S / D
-      </p>
       <p className="mb-4">De nuestra mayor consideración:</p>
       <p className="mb-4">
         Tenemos el agrado de elevar a ustedes el informe correspondiente a la auditoría independiente del marco de resiliencia operativa de la entidad —Plan de Continuidad del Negocio, Plan de Recuperación ante Desastres y Análisis de Impacto al Negocio—, ejecutada entre el 25 de junio y el 28 de julio de 2026 sobre la documentación del período comprendido entre el 1 de junio de 2025 y el 30 de junio de 2026.
