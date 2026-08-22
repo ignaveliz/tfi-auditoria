@@ -253,21 +253,21 @@ const DetalleIntro = () => {
                 <td className="px-3 py-2 text-center font-medium">2</td>
                 <td className="px-3 py-2 font-medium">Seguridad Lógica</td>
                 <td className="px-3 py-2">Integral</td>
-                <td className="px-3 py-2 text-red-600 font-medium">Deficiente en contingencia</td>
+                <td className="px-3 py-2 text-red-600 font-medium">No adecuado en contingencia</td>
                 <td className="px-3 py-2 text-gray-700">Equivalencia de autenticación acreditada (CA-02), pero accesos de emergencia sin autorización ni revisión. OBS-07.</td>
               </tr>
               <tr>
                 <td className="px-3 py-2 text-center font-medium">3</td>
                 <td className="px-3 py-2 font-medium">Gestión de Cambios</td>
                 <td className="px-3 py-2">Control documental</td>
-                <td className="px-3 py-2 text-red-600 font-medium">Deficiente en versiones</td>
+                <td className="px-3 py-2 text-red-600 font-medium">No adecuado en versiones</td>
                 <td className="px-3 py-2 text-gray-700">El BCP registra 14 meses sin revisión y el DRP permanece sin aprobación. OBS-01 · OBS-03.</td>
               </tr>
               <tr>
                 <td className="px-3 py-2 text-center font-medium">4</td>
                 <td className="px-3 py-2 font-medium">Backups y Recuperación</td>
                 <td className="px-3 py-2">Integral</td>
-                <td className="px-3 py-2 text-red-600 font-medium">Deficiente</td>
+                <td className="px-3 py-2 text-red-600 font-medium">No adecuado</td>
                 <td className="px-3 py-2 text-gray-700">Fallos de copia sin compensación; sin prueba de restauración exitosa; repositorio accesible. OBS-02, 05, 06.</td>
               </tr>
               <tr>
