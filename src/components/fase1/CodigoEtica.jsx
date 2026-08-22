@@ -1,5 +1,5 @@
 import { Scale } from 'lucide-react';
-
+import Acordeon from '../Acordeon';
 const CodigoEtica = () => {
   return (
     <div>
@@ -35,17 +35,20 @@ const CodigoEtica = () => {
           ))}
         </div>
 
-        <h3 className="text-xl font-bold text-corporate-navy mb-4 border-b pb-2">Compromisos Específicos para el Encargo</h3>
-        <ul className="space-y-3 list-disc pl-5 text-sm text-gray-600">
-          <li><strong>Declaración de independencia:</strong> Declaración jurada de ausencia de conflictos de interés con Crédito Fácil S.A.</li>
-          <li><strong>Prohibición de operar sobre datos productivos:</strong> Accesos de solo lectura. Análisis sobre copias de producción.</li>
-          <li><strong>Tratamiento de datos personales:</strong> Disociación y enmascaramiento conforme a la Ley 25.326.</li>
-          <li><strong>Custodia de evidencia:</strong> Cifrada por cinco años, luego destruida bajo acta.</li>
-          <li><strong>Política antisoborno:</strong> Prohibición de recibir obsequios o atenciones.</li>
-          <li><strong>Auditoría sobre procesos:</strong> No sobre personas. Las observaciones se atribuyen a procesos y controles.</li>
-          <li><strong>Derecho de descargo:</strong> Comunicación previa obligatoria al área auditada antes de la emisión del informe.</li>
-          <li><strong>Canal de integridad:</strong> Vía directa confidencial (<a href="mailto:integridad@vanguardit.com.ar" className="text-corporate-blue">integridad@vanguardit.com.ar</a>).</li>
-        </ul>
+        <div className="mb-4">
+          <Acordeon title="Compromisos Específicos para el Encargo">
+            <ul className="space-y-3 list-disc pl-5 text-sm text-gray-600">
+              <li><strong>Declaración de independencia:</strong> Declaración jurada de ausencia de conflictos de interés con Crédito Fácil S.A.</li>
+              <li><strong>Prohibición de operar sobre datos productivos:</strong> Accesos de solo lectura. Análisis sobre copias de producción.</li>
+              <li><strong>Tratamiento de datos personales:</strong> Disociación y enmascaramiento conforme a la Ley 25.326.</li>
+              <li><strong>Custodia de evidencia:</strong> Cifrada por cinco años, luego destruida bajo acta.</li>
+              <li><strong>Política antisoborno:</strong> Prohibición de recibir obsequios o atenciones.</li>
+              <li><strong>Auditoría sobre procesos:</strong> No sobre personas. Las observaciones se atribuyen a procesos y controles.</li>
+              <li><strong>Derecho de descargo:</strong> Comunicación previa obligatoria al área auditada antes de la emisión del informe.</li>
+              <li><strong>Canal de integridad:</strong> Vía directa confidencial (<a href="mailto:integridad@vanguardit.com.ar" className="text-corporate-blue">integridad@vanguardit.com.ar</a>).</li>
+            </ul>
+          </Acordeon>
+        </div>
       </div>
     </div>
   );

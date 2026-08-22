@@ -19,23 +19,20 @@ const PresentacionFirma = () => {
           </p>
         </div>
 
-        <div className="mb-8 border rounded-md overflow-hidden">
-          <div className="bg-gray-50 px-4 py-3 border-b">
-            <h3 className="text-lg font-bold text-corporate-navy m-0 flex items-center gap-2">
-              <FileCheck className="h-5 w-5 text-corporate-accent" /> Datos Corporativos
-            </h3>
-          </div>
-          <div className="p-4 bg-white grid gap-y-3 gap-x-6 md:grid-cols-2 text-sm">
-            <div><span className="font-bold text-corporate-navy">Razón social:</span> Vanguard IT Audit Group S.R.L.</div>
-            <div><span className="font-bold text-corporate-navy">CUIT:</span> 30-71284596-3</div>
-            <div className="md:col-span-2"><span className="font-bold text-corporate-navy">Sede central:</span> Av. Sarmiento 785, Piso 6, Oficina 12 — San Miguel de Tucumán (T4000CVQ), Tucumán, Argentina</div>
-            <div className="md:col-span-2"><span className="font-bold text-corporate-navy">Oficinas de representación:</span> Ciudad Autónoma de Buenos Aires · Córdoba</div>
-            <div><span className="font-bold text-corporate-navy">Año de constitución:</span> 2014</div>
-            <div><span className="font-bold text-corporate-navy">Dotación profesional:</span> 38 profesionales (26 en práctica de auditoría, 12 en práctica técnica)</div>
-            <div><span className="font-bold text-corporate-navy">Teléfono:</span> +54 381 445-8800</div>
-            <div><span className="font-bold text-corporate-navy">Correo institucional:</span> contacto@vanguardit.com.ar</div>
-            <div className="md:col-span-2"><span className="font-bold text-corporate-navy">Sitio web:</span> www.vanguardit.com.ar</div>
-          </div>
+        <div className="mb-8">
+          <Acordeon title="Datos Corporativos">
+            <div className="grid gap-y-3 gap-x-6 md:grid-cols-2 text-sm p-2">
+              <div><span className="font-bold text-corporate-navy">Razón social:</span> Vanguard IT Audit Group S.R.L.</div>
+              <div><span className="font-bold text-corporate-navy">CUIT:</span> 30-71284596-3</div>
+              <div className="md:col-span-2"><span className="font-bold text-corporate-navy">Sede central:</span> Av. Sarmiento 785, Piso 6, Oficina 12 — San Miguel de Tucumán (T4000CVQ), Tucumán, Argentina</div>
+              <div className="md:col-span-2"><span className="font-bold text-corporate-navy">Oficinas de representación:</span> Ciudad Autónoma de Buenos Aires · Córdoba</div>
+              <div><span className="font-bold text-corporate-navy">Año de constitución:</span> 2014</div>
+              <div><span className="font-bold text-corporate-navy">Dotación profesional:</span> 38 profesionales (26 en práctica de auditoría, 12 en práctica técnica)</div>
+              <div><span className="font-bold text-corporate-navy">Teléfono:</span> +54 381 445-8800</div>
+              <div><span className="font-bold text-corporate-navy">Correo institucional:</span> contacto@vanguardit.com.ar</div>
+              <div className="md:col-span-2"><span className="font-bold text-corporate-navy">Sitio web:</span> www.vanguardit.com.ar</div>
+            </div>
+          </Acordeon>
         </div>
 
         <div className="grid md:grid-cols-2 gap-6 mb-8">
@@ -84,7 +81,7 @@ const PresentacionFirma = () => {
         </p>
 
         <div className="mb-8">
-          <Acordeon titulo="Casos de Éxito Recientes (Últimos 24 meses)">
+          <Acordeon title="Casos de Éxito Recientes (Últimos 24 meses)">
             <div className="space-y-4">
               <div className="p-4 border border-gray-200 rounded-md bg-white">
                 <div className="font-bold text-corporate-navy mb-1 flex items-center justify-between">
