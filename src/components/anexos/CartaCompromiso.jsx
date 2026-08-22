@@ -3,7 +3,10 @@ const CartaCompromiso = () => {
     <div className="prose max-w-none text-gray-700">
       <div className="bg-white border border-gray-300 p-8 shadow-inner font-serif text-sm">
 
-          <p className="text-right mb-6">San Miguel de Tucumán, 24 de junio de 2026</p>
+          <p className="text-right mb-2">San Miguel de Tucumán, 24 de junio de 2026</p>
+          <div className="flex justify-end mb-6">
+            <img src="/logos/vanguard-logo-horizontal.svg" alt="Vanguard Logo" className="h-10 opacity-70" />
+          </div>
           <p className="mb-6">
             <strong>Señores</strong><br/>
             Directorio y Gerencia General<br/>

@@ -8,7 +8,10 @@ const CartaElevacionFase6 = () => {
         <h3 className="text-xl font-bold text-corporate-navy m-0">A.1 Carta de elevación del informe</h3>
       </div>
       
-      <p className="text-right text-sm text-gray-500 mb-4">San Miguel de Tucumán, 28 de julio de 2026</p>
+      <p className="text-right text-sm text-gray-500 mb-2">San Miguel de Tucumán, 28 de julio de 2026</p>
+      <div className="flex justify-end mb-4">
+        <img src="/logos/vanguard-logo-horizontal.svg" alt="Vanguard Logo" className="h-8 opacity-70" />
+      </div>
       <p className="font-bold mb-4">
         Señores<br/>
         Directorio y Gerencia General<br/>

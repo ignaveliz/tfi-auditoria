@@ -3,9 +3,13 @@ import { FileText, Users, CheckSquare } from 'lucide-react';
 const ActaInicio = () => {
   return (
     <div>
-      <div className="flex items-center gap-3 mb-6">
+      <div className="flex items-center gap-3 mb-2">
         <FileText className="h-8 w-8 text-corporate-blue" />
         <h2 className="text-2xl font-bold text-corporate-navy">1. Acta de inicio del encargo</h2>
+      </div>
+      
+      <div className="flex justify-end mb-6">
+        <img src="/logos/vanguard-logo-horizontal.svg" alt="Vanguard Logo" className="h-10 opacity-70" />
       </div>
 
       <div className="prose max-w-none text-gray-700">
