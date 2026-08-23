@@ -1,8 +1,15 @@
-import { Outlet, NavLink } from 'react-router-dom';
+import { Outlet, NavLink, useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
 import { ShieldCheck } from 'lucide-react';
 import ScrollToTopButton from './ScrollToTopButton';
 
 const Layout = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   const phases = [
     { id: 1, path: '/fase1', label: 'Fase 1' },
     { id: 2, path: '/fase2', label: 'Fase 2' },
