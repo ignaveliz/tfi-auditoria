@@ -1,5 +1,6 @@
 import { Outlet, NavLink } from 'react-router-dom';
 import { ShieldCheck } from 'lucide-react';
+import ScrollToTopButton from './ScrollToTopButton';
 
 const Layout = () => {
   const phases = [
@@ -51,6 +52,8 @@ const Layout = () => {
       <main className="flex-grow">
         <Outlet />
       </main>
+
+      <ScrollToTopButton />
 
       {/* Footer Corporativo */}
       <footer className="bg-corporate-navy text-gray-400 py-6 text-sm text-center border-t border-gray-800">

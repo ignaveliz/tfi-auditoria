@@ -31,7 +31,7 @@ const EjecucionOC3 = () => {
       procedimiento: 'Cruce de los eventos del SIEM y del IAM con los tickets de autorización previa y con los registros de revisión posterior. Verificación, para cada activación, de la existencia de aprobación, del alcance temporal declarado y del acta de revisión de los comandos ejecutados.',
       evidencia: 'EV-09 — Registro de activaciones de cuentas de emergencia y eventos SIEM.',
       resultado: 'La cuenta bgadmincore fue utilizada durante cuatro horas por un operador de guardia. Existe registro del evento, lo que acredita trazabilidad de la activación. No se localizó autorización previa documentada, revisión posterior de los comandos ejecutados, acta de cierre ni constancia de revocación por parte del propietario del sistema o del CISO.',
-      conclusion: 'DEFICIENTE. El uso excepcional queda registrado pero no sujeto a control: sin autorización previa ni revisión posterior, el mecanismo de emergencia opera como una vía de acceso privilegiado no supervisada. Deriva a PT-OBS-07.',
+      conclusion: 'NO ADECUADO. El uso excepcional queda registrado pero no sujeto a control: sin autorización previa ni revisión posterior, el mecanismo de emergencia opera como una vía de acceso privilegiado no supervisada. Deriva a PT-OBS-07.',
       normativa: 'BCRA Com. «A» 7783 y «A» 7724 · ISO/IEC 27002:2022, controles 5.15 y 8.2',
       trazabilidad: 'RA-08 → PA-12 → EV-09 → PT-OBS-07'
     },
@@ -47,7 +47,7 @@ const EjecucionOC3 = () => {
       procedimiento: 'Extracción del inventario del IAM sobre copia en ambiente controlado. Clasificación de la totalidad de las cuentas por tipo. Verificación, para las cuentas genéricas y de servicio, del factor de autenticación, de la excepción aprobada y del control compensatorio declarado.',
       evidencia: 'EV-10 — Inventario de cuentas del IAM del entorno de contingencia.',
       resultado: 'De las 87 cuentas, 79 son personales y nominadas. La cuenta soportedr figura activa, es genérica y no utiliza multifactor. La cuenta sysbatch_01, de servicio, tampoco lo utiliza. Para ninguna de las dos se localizó excepción aprobada, propietario asignado ni monitoreo compensatorio.',
-      conclusion: 'DEFICIENTE. La existencia de una cuenta genérica activa sin trazabilidad individual impide atribuir las acciones ejecutadas durante una recuperación a una persona determinada. Deriva a PT-OBS-07.',
+      conclusion: 'NO ADECUADO. La existencia de una cuenta genérica activa sin trazabilidad individual impide atribuir las acciones ejecutadas durante una recuperación a una persona determinada. Deriva a PT-OBS-07.',
       normativa: 'BCRA Com. «A» 7783 y «A» 7724 · ISO/IEC 27002:2022, controles 5.15, 5.16 y 8.2',
       trazabilidad: 'RA-08 → PA-13 → EV-10 → PT-OBS-07'
     },
@@ -63,7 +63,7 @@ const EjecucionOC3 = () => {
       procedimiento: 'Inspección del inventario del IAM, de la matriz de perfiles y de la matriz de alertas. Búsqueda, para cada cuenta, de fecha de última recertificación, propietario responsable y ticket de excepción con fecha de vencimiento.',
       evidencia: 'EV-08 — Matriz de perfiles y accesos · EV-10 — Inventario del IAM.',
       resultado: 'No se localizó constancia de un ciclo de recertificación completo sobre el universo de cuentas del entorno de contingencia. Las tres excepciones identificadas —la cuenta genérica, la cuenta de servicio y el perfil de Atención al Cliente sin multifactor— no cuentan con aprobación formal, propietario designado ni fecha de vencimiento.',
-      conclusion: 'DEFICIENTE. El control de revisión periódica no se demuestra para el universo de recuperación y las excepciones operan sin gobierno. Refuerza PT-OBS-07.',
+      conclusion: 'NO ADECUADO. El control de revisión periódica no se demuestra para el universo de recuperación y las excepciones operan sin gobierno. Refuerza PT-OBS-07.',
       normativa: 'BCRA Com. «A» 7783 · ISO/IEC 27002:2022, controles 5.15, 5.18 y 8.2',
       trazabilidad: 'RA-08 → PA-11 → EV-08, EV-10 → PT-OBS-07'
     }
