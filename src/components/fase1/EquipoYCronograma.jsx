@@ -5,7 +5,7 @@ const teamMembers = [
   { nombre: "Mariana Saavedra", rol: "Líder de Proyecto", foto: null },
   { nombre: "Luciano Agustín Donnet", rol: "Auditor Senior", foto: "/integrantes/Luciano Agustín Donnet.jpeg" },
   { nombre: "Belén Iara Román", rol: "Auditora (OC-1)", foto: "/integrantes/Belén Iara Román.jpeg" },
-  { nombre: "Celina Abigail Zato Sosa", rol: "Auditora (OC-1 / OC-2)", foto: null },
+  { nombre: "Celina Abigail Zato Sosa", rol: "Auditora (OC-1 / OC-2)", foto: "/integrantes/Celina Abigail Zato Sosa.jpeg" },
   { nombre: "Ignacio Martín Veliz", rol: "Auditor (OC-3)", foto: "/integrantes/Ignacio Martín Veliz.jpeg" },
   { nombre: "César Tomás Delgado", rol: "Técnico Especialista", foto: "/integrantes/César Tomás Delgado.jpeg" },
   { nombre: "Leopoldo Gabriel Samaniego", rol: "Técnico (Logs)", foto: "/integrantes/Leopoldo Gabriel Samaniego.jpeg" },
