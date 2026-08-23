@@ -1,5 +1,16 @@
-import { Users, Calendar, Calculator } from 'lucide-react';
+import { Users, Calendar, Calculator, User } from 'lucide-react';
 import Acordeon from '../Acordeon';
+
+const teamMembers = [
+  { nombre: "Mariana Saavedra", rol: "Líder de Proyecto", foto: null },
+  { nombre: "Luciano Agustín Donnet", rol: "Auditor Senior", foto: "/integrantes/Luciano Agustín Donnet.jpeg" },
+  { nombre: "Belén Iara Román", rol: "Auditora (OC-1)", foto: "/integrantes/Belén Iara Román.jpeg" },
+  { nombre: "Celina Abigail Zato Sosa", rol: "Auditora (OC-1 / OC-2)", foto: null },
+  { nombre: "Ignacio Martín Veliz", rol: "Auditor (OC-3)", foto: "/integrantes/Ignacio Martín Veliz.jpeg" },
+  { nombre: "César Tomás Delgado", rol: "Técnico Especialista", foto: "/integrantes/César Tomás Delgado.jpeg" },
+  { nombre: "Leopoldo Gabriel Samaniego", rol: "Técnico (Logs)", foto: "/integrantes/Leopoldo Gabriel Samaniego.jpeg" },
+  { nombre: "Nadia Enoa Rizo Avalos", rol: "Técnico (Configuraciones)", foto: "/integrantes/Nadia Enoa Rizo Avalos.jpeg" }
+];
 
 const EquipoYCronograma = () => {
   return (
@@ -15,8 +26,25 @@ const EquipoYCronograma = () => {
         <p className="mb-4 text-sm">
           El encargo será ejecutado por un equipo de ocho profesionales. Una mitad del esfuerzo se concentra en revisión documental y gobierno, y la otra en pruebas técnicas sobre la infraestructura y resguardos.
         </p>
-        
-        <div className="overflow-x-auto mb-8">
+
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
+          {teamMembers.map((member, index) => (
+            <div key={index} className="flex flex-col items-center text-center">
+              <div className="w-24 h-24 mb-3 rounded-full overflow-hidden border-2 border-corporate-blue shadow-sm bg-gray-100 flex items-center justify-center">
+                {member.foto ? (
+                  <img src={member.foto} alt={member.nombre} className="w-full h-full object-cover" />
+                ) : (
+                  <User className="w-12 h-12 text-gray-400" />
+                )}
+              </div>
+              <h4 className="font-bold text-corporate-navy text-sm">{member.nombre}</h4>
+              <p className="text-xs text-gray-500">{member.rol}</p>
+            </div>
+          ))}
+        </div>
+
+        <Acordeon title="Detalle de Honorarios y Focos" defaultOpen={true}>
+          <div className="overflow-x-auto my-4">
           <table className="min-w-full divide-y divide-gray-200 border text-sm whitespace-nowrap">
             <thead className="bg-corporate-gray text-corporate-navy">
               <tr>
@@ -106,6 +134,7 @@ const EquipoYCronograma = () => {
             </tfoot>
           </table>
         </div>
+        </Acordeon>
 
         <Acordeon title="Responsabilidades Detalladas por Rol">
           <div className="space-y-4">
