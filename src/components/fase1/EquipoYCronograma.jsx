@@ -2,7 +2,7 @@ import { Users, Calendar, Calculator, User } from 'lucide-react';
 import Acordeon from '../Acordeon';
 
 const teamMembers = [
-  { nombre: "Mariana Saavedra", rol: "Líder de Proyecto", foto: null },
+  { nombre: "Mariana Saavedra", rol: "Líder de Proyecto", foto: "/integrantes/Mariana Saavedra.jpeg" },
   { nombre: "Luciano Agustín Donnet", rol: "Auditor Senior", foto: "/integrantes/Luciano Agustín Donnet.jpeg" },
   { nombre: "Belén Iara Román", rol: "Auditora (OC-1)", foto: "/integrantes/Belén Iara Román.jpeg" },
   { nombre: "Celina Abigail Zato Sosa", rol: "Auditora (OC-1 / OC-2)", foto: "/integrantes/Celina Abigail Zato Sosa.jpeg" },
@@ -32,7 +32,11 @@ const EquipoYCronograma = () => {
             <div key={index} className="flex flex-col items-center text-center">
               <div className="w-24 h-24 mb-3 rounded-full overflow-hidden border-2 border-corporate-blue shadow-sm bg-gray-100 flex items-center justify-center">
                 {member.foto ? (
-                  <img src={member.foto} alt={member.nombre} className="w-full h-full object-cover" />
+                  <img 
+                    src={member.foto} 
+                    alt={member.nombre} 
+                    className={`w-full h-full object-cover ${(member.nombre.includes('Mariana') || member.nombre.includes('Iara')) ? 'scale-110' : ''}`} 
+                  />
                 ) : (
                   <User className="w-12 h-12 text-gray-400" />
                 )}
