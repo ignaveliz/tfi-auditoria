@@ -41,7 +41,7 @@ const AlcanceEvidencia = () => {
                 <td className="px-3 py-2">El control existe y opera, pero la evidencia disponible no permite concluir sobre la totalidad de sus atributos. Se documenta la limitación.</td>
               </tr>
               <tr>
-                <td className="px-3 py-2 font-bold text-red-600">DEFICIENTE</td>
+                <td className="px-3 py-2 font-bold text-red-600">NO ADECUADO</td>
                 <td className="px-3 py-2">El control no existe, no opera o no puede demostrarse. Deriva a un papel de observación (PT-OBS).</td>
               </tr>
               <tr>

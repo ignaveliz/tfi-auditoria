@@ -14,7 +14,7 @@ const PapelTransversal = () => {
     procedimiento: 'Reconciliación analítica parámetro por parámetro, sin adoptar arbitrariamente una fuente como prevalente. Registro de cada diferencia con indicación del documento, del valor declarado y de la fecha de la versión. Búsqueda de un criterio de prevalencia formalmente definido por la entidad.',
     evidencia: 'EV-12 — Reconciliación documental · EV-02 — Tabla del BIA · EV-03 — DRP v1.0.',
     resultado: 'P1 coincide en la totalidad de sus parámetros. P2 presenta tres divergencias: MTPD de 4 horas en el BIA contra 8 en el BCP, RTO de 2 horas contra 4, y RPO cualitativo contra no definido. P3 presenta dos: MTPD de 6 horas contra 2, y RTO de 4 horas contra 1. El BCP distingue en P3 entre consultas generales y líneas prioritarias de fraude, distinción que el BIA no recoge. No existe criterio de prevalencia definido ante discrepancias, y el DRP, que debería resolver la divergencia en su capa técnica, carece de aprobación que le otorgue prevalencia.',
-    conclusion: 'DEFICIENTE. Un mismo proceso declara umbrales distintos según qué documento se consulte, sin regla que determine cuál rige. En un evento real, el área operativa y el área técnica actuarían contra parámetros diferentes. Se cruza con PT-OBS-02 y PT-OBS-03.',
+    conclusion: 'NO ADECUADO. Un mismo proceso declara umbrales distintos según qué documento se consulte, sin regla que determine cuál rige. En un evento real, el área operativa y el área técnica actuarían contra parámetros diferentes. Se cruza con PT-OBS-02 y PT-OBS-03.',
     normativa: 'BCRA Com. «A» 7777 · ISO 22301, cláusulas 8.2 y 8.3 · ISO/IEC 27002:2022, controles 5.29 y 5.30',
     trazabilidad: 'RA-05 → PA-01 y PA-02 → EV-02, EV-03, EV-12 → PT-OBS-02 y PT-OBS-03'
   };
