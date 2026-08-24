@@ -19,7 +19,7 @@ const ConclusionPlanificacion = () => {
         
         <div className="bg-corporate-gray p-5 rounded-lg border text-sm mt-6 mb-8">
           <p className="mb-0">
-            <strong>Las cuatro son verificables sobre documentación.</strong> Ninguna exige inversión en infraestructura para corregirse: se resuelven definiendo parámetros, elevándolos a aprobación de la Alta Dirección y restableciendo el ciclo de revisión que la propia normativa interna de la entidad ya prevé. Esa es la conclusión con mayor valor práctico de esta etapa —la brecha principal de Crédito Fácil S.A. no está en su tecnología sino en el mantenimiento y la formalización de instrumentos que ya construyó—.
+            <strong>Las cinco son verificables sobre documentación.</strong> Ninguna exige inversión en infraestructura para corregirse: se resuelven definiendo parámetros, elevándolos a aprobación de la Alta Dirección y restableciendo el ciclo de revisión que la propia normativa interna de la entidad ya prevé. Esa es la conclusión con mayor valor práctico de esta etapa —la brecha principal de Crédito Fácil S.A. no está en su tecnología sino en el mantenimiento y la formalización de instrumentos que ya construyó—.
           </p>
         </div>
 

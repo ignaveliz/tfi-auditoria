@@ -58,14 +58,6 @@ const LimitacionesCierre = () => {
           </table>
         </div>
 
-        <div className="bg-amber-50 border-l-4 border-amber-400 p-4 mb-10 rounded-r-md">
-          <h4 className="text-sm font-bold text-amber-800 mb-1 flex items-center gap-2">
-            Condición de independencia pendiente de resolución
-          </h4>
-          <p className="text-sm text-amber-900 mb-0">
-            Se reitera lo comunicado en el apartado 5.3 de la Fase 2: el BCP designa como integrantes del Equipo de Respuesta Operativa de la entidad a dos profesionales cuyos nombres coinciden con integrantes del equipo auditor. Hasta que la entidad rectifique esas designaciones, los papeles PT-OC3-02 y PT-OC1-01 fueron ejecutados con revisión adicional del Líder de Proyecto y sin intervención de los profesionales alcanzados por la condición, a fin de preservar la objetividad de las conclusiones.
-          </p>
-        </div>
 
         <div className="flex items-center gap-3 mb-6">
           <Flag className="h-8 w-8 text-corporate-blue" />

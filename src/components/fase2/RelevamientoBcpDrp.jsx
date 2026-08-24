@@ -1,4 +1,4 @@
-import { Search, AlertOctagon, Check, X, ShieldAlert } from 'lucide-react';
+import { Search, AlertOctagon, Check, X } from 'lucide-react';
 import Acordeon from '../Acordeon';
 
 const RelevamientoBcpDrp = () => {
@@ -113,20 +113,7 @@ const RelevamientoBcpDrp = () => {
           </table>
         </div>
 
-        <div className="bg-red-50 border-l-4 border-red-500 p-5 mt-6">
-          <div className="flex items-start gap-4">
-            <ShieldAlert className="h-6 w-6 text-red-500 mt-1 flex-shrink-0" />
-            <div>
-              <h4 className="font-bold text-red-800 m-0 mb-2">Condición que compromete la independencia del encargo</h4>
-              <p className="text-red-900 text-sm m-0 mb-2">
-                El BCP designa como integrantes del Equipo de Respuesta Operativa de la entidad al <strong>Ing. Esp. César Tomás Delgado</strong> (División Liquidación de Créditos) y al <strong>Ing. Esp. Ignacio Veliz</strong> (División Acreditación de Haberes). Ambos nombres corresponden a integrantes del equipo auditor asignado a este encargo.
-              </p>
-              <p className="text-red-900 text-sm m-0">
-                Ninguna persona puede ejecutar un procedimiento de contingencia por cuenta de la entidad y auditar ese mismo procedimiento. La situación fue comunicada por escrito a la Gerencia General el 02/07/2026, y su resolución —rectificación de las designaciones del BCP o sustitución de los integrantes del equipo— es condición previa a la emisión de conclusiones definitivas sobre OC-1 y OC-3. Hasta que la entidad se pronuncie, los procedimientos alcanzados se ejecutan bajo salvaguarda: ningún profesional comprendido en la condición interviene en la prueba que lo alcanza, y los papeles respectivos se someten a revisión adicional del Líder de Proyecto.
-              </p>
-            </div>
-          </div>
-        </div>
+
 
       </div>
     </div>
