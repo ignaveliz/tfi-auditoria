@@ -59,7 +59,7 @@ const ActaInicio = () => {
         <ul className="space-y-3 mb-6">
           <li><strong>Ratificación del objeto y del alcance.</strong> Se confirman los tres objetivos de control, los cinco procesos críticos, el período de registros (01/06/2025 – 30/06/2026) y las exclusiones expresas establecidas en la Propuesta de Auditoría.</li>
           <li><strong>Presentación del equipo y de los roles.</strong> Se comunican las responsabilidades de cada integrante y el esquema de supervisión en cascada.</li>
-          <li><strong>Entrega de la Solicitud de Información Inicial (Anexo I).</strong> Se entrega el listado de dieciséis requerimientos documentales, con plazo de cinco días hábiles, es decir hasta el <strong>02/07/2026</strong>.</li>
+          <li><strong>Entrega de la Solicitud de Información Inicial (Anexo A1-I).</strong> Se entrega el listado de dieciséis requerimientos documentales, con plazo de cinco días hábiles, es decir hasta el <strong>02/07/2026</strong>.</li>
           <li><strong>Habilitación de accesos.</strong> La entidad se compromete a otorgar accesos de <strong>solo lectura</strong> a los sistemas comprendidos en el alcance antes del inicio de la etapa de ejecución.</li>
           <li><strong>Agenda de entrevistas.</strong> Se acuerda el calendario de entrevistas con los propietarios de los cinco procesos y con el CISO.</li>
           <li><strong>Canales de comunicación.</strong> Se designa a la Gerencia de Operaciones y Tecnología como interlocutor institucional único y se establece que toda solicitud y toda respuesta se cursarán por escrito, con acuse de recibo.</li>
@@ -70,7 +70,7 @@ const ActaInicio = () => {
           <CheckSquare className="h-5 w-5" /> 1.3 Compromisos asumidos
         </h3>
         <ul className="list-disc pl-5 space-y-2 mb-6">
-          <li>La entidad proveerá la documentación del Anexo I completa y en tiempo, y comunicará por escrito toda limitación que impida entregarla.</li>
+          <li>La entidad proveerá la documentación del Anexo A1-I completa y en tiempo, y comunicará por escrito toda limitación que impida entregarla.</li>
           <li>La entidad informará al equipo cualquier incidente de continuidad, cambio de arquitectura o requerimiento del regulador que se produzca durante la ejecución.</li>
           <li>La firma tratará toda la información bajo secreto profesional, con custodia controlada de la evidencia, y no operará sobre datos productivos.</li>
           <li>Ambas partes reconocen que la responsabilidad por el diseño y el mantenimiento del marco de continuidad permanece en cabeza de la Dirección de la entidad y no se transfiere por efecto de esta auditoría.</li>

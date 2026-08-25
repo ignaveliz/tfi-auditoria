@@ -38,7 +38,7 @@ const CodigoEtica = () => {
         <div className="mb-4">
           <Acordeon title="Compromisos Específicos para el Encargo">
             <ul className="space-y-3 list-disc pl-5 text-sm text-gray-600">
-              <li><strong>Declaración de independencia:</strong> Declaración jurada de ausencia de conflictos de interés con Crédito Fácil S.A.</li>
+              <li><strong>Declaración de independencia:</strong> Declaración jurada de independencia, objetividad y confidencialidad, que integra el Anexo A1-III.</li>
               <li><strong>Prohibición de operar sobre datos productivos:</strong> Accesos de solo lectura. Análisis sobre copias de producción.</li>
               <li><strong>Tratamiento de datos personales:</strong> Disociación y enmascaramiento conforme a la Ley 25.326.</li>
               <li><strong>Custodia de evidencia:</strong> Cifrada por cinco años, luego destruida bajo acta.</li>
