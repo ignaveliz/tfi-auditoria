@@ -259,7 +259,7 @@ const EquipoYCronograma = () => {
         <div className="mt-8 space-y-4">
           <Acordeon title="Hitos Principales del Proyecto">
             <ul className="space-y-3 text-sm">
-              <li><strong className="text-corporate-navy">H1 (25/06/2026):</strong> Kick-off y entrega de Solicitud de Información Inicial (Anexo I).</li>
+              <li><strong className="text-corporate-navy">H1 (25/06/2026):</strong> Kick-off y entrega de Solicitud de Información Inicial (Anexo A1-I).</li>
               <li><strong className="text-corporate-navy">H2 (02/07/2026):</strong> Cierre de Fase I y comunicación del nivel de confianza determinado.</li>
               <li><strong className="text-corporate-navy">H3 (22/07/2026):</strong> Reunión de validación técnica de hallazgos y apertura de plazo de descargo.</li>
               <li><strong className="text-corporate-navy">H4 (28/07/2026):</strong> Entrega formal de informes definitivos (Parte A y Parte B).</li>
@@ -269,7 +269,7 @@ const EquipoYCronograma = () => {
 
           <Acordeon title="Dependencias Críticas del Cronograma">
             <ul className="list-disc pl-5 text-sm space-y-2">
-              <li>Entrega de documentación solicitada (Anexo I) dentro de los 5 días hábiles posteriores al kick-off.</li>
+              <li>Entrega de documentación solicitada (Anexo A1-I) dentro de los 5 días hábiles posteriores al kick-off.</li>
               <li>Habilitación de accesos de solo lectura a sistemas antes del inicio de Semana 2.</li>
               <li>Disponibilidad de referentes técnicos y funcionales de la entidad para entrevistas programadas.</li>
             </ul>
