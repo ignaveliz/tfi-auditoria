@@ -102,30 +102,7 @@ const EvaluacionAmbiente = () => {
           </div>
         </Acordeon>
 
-        <Acordeon title="2.4 Ajustes de consistencia aplicados al instrumento">
-          <p className="text-sm mb-4">Durante la revisión de segundo nivel se detectaron seis hallazgos cuya redacción afirmaba hechos incompatibles con el resto de la evidencia del encargo. Se corrigieron sin alterar las calificaciones ni el resultado consolidado.</p>
-          <div className="overflow-x-auto mt-2 mb-4">
-            <table className="min-w-full divide-y divide-gray-200 border text-sm">
-              <thead className="bg-gray-100 text-corporate-navy">
-                <tr>
-                  <th className="px-3 py-2 text-center font-bold">N.°</th>
-                  <th className="px-3 py-2 text-left font-bold">Redacción original</th>
-                  <th className="px-3 py-2 text-left font-bold">Corrección aplicada</th>
-                </tr>
-              </thead>
-              <tbody className="bg-white divide-y divide-gray-200">
-                <tr><td className="px-3 py-2 text-center">2</td><td className="px-3 py-2 text-gray-500">Afirmaba cobertura «robusta, explícita e integral» de la totalidad de los recursos, incompatible con la calificación Parcial asignada.</td><td className="px-3 py-2">Se acota la cobertura efectiva y se explicita la deficiencia que sostiene la calificación: entorno de contingencia y procesos P4-P5.</td></tr>
-                <tr><td className="px-3 py-2 text-center">3</td><td className="px-3 py-2 text-gray-500">Afirmaba «aprobación y desembolso efectivo» de partidas para simulacros y pruebas de restauración ya realizadas.</td><td className="px-3 py-2">Se conserva la evidencia de compromiso (aprobación) y se suprime la afirmación sobre ejecución, no acreditada.</td></tr>
-                <tr><td className="px-3 py-2 text-center">10</td><td className="px-3 py-2 text-gray-500">Afirmaba el financiamiento de simulacros del PCN y pruebas como hechos consumados.</td><td className="px-3 py-2">Se limita a la aprobación de partidas destinadas a resiliencia, sin afirmar su ejecución.</td></tr>
-                <tr><td className="px-3 py-2 text-center">16</td><td className="px-3 py-2 text-gray-500">Describía un cuerpo normativo «completamente actualizado» bajo ciclo de revisión anual.</td><td className="px-3 py-2">Se identifican las brechas concretas que sostienen la calificación.</td></tr>
-                <tr><td className="px-3 py-2 text-center">22</td><td className="px-3 py-2 text-gray-500">Incluía «resultados de pruebas de restauración» entre las métricas reportadas.</td><td className="px-3 py-2">Se suprime la referencia a resultados de restauración, que ninguna evidencia respalda.</td></tr>
-                <tr><td className="px-3 py-2 text-center">29</td><td className="px-3 py-2 text-gray-500">Afirmaba que los reportes incluyen el estado de MTPD, RTO y RPO por proceso crítico conforme al BIA.</td><td className="px-3 py-2">Se acota a métricas de desempeño, incidentes y cumplimiento normativo. El BIA carece de RPO cuantificado para P2 y IAM.</td></tr>
-              </tbody>
-            </table>
-          </div>
-        </Acordeon>
-
-        <h3 className="text-xl font-bold text-corporate-navy mt-8 mb-4 border-b pb-2">2.5 Determinación del nivel de confianza</h3>
+        <h3 className="text-xl font-bold text-corporate-navy mt-8 mb-4 border-b pb-2">2.4 Determinación del nivel de confianza</h3>
         
         <div className="bg-blue-50 border border-blue-200 p-6 rounded-lg mb-8">
           <div className="flex flex-col md:flex-row items-center gap-6">
@@ -142,7 +119,7 @@ const EvaluacionAmbiente = () => {
         </div>
 
         <h3 className="text-xl font-bold text-corporate-navy mt-6 mb-4 flex items-center gap-2 border-b pb-2">
-          <AlertTriangle className="h-5 w-5" /> 2.6 Conclusión sobre el ambiente de control
+          <AlertTriangle className="h-5 w-5" /> 2.5g Conclusión sobre el ambiente de control
         </h3>
         <p className="mb-4">
           El ambiente de control de Crédito Fácil S.A. presenta un <strong>diseño de gobierno sólido en su dimensión estructural</strong>: la ubicación de TI en el organigrama garantiza independencia, la segregación de funciones está formalizada e incluye el esquema maker-checker de Tesorería, el CISO cuenta con designación formal y línea de reporte propia, la revocación de accesos ante desvinculación opera de manera automatizada y verificada, y la metodología de gestión de riesgos de TI está aprobada y con propietarios asignados.
