@@ -119,7 +119,7 @@ const EvaluacionAmbiente = () => {
         </div>
 
         <h3 className="text-xl font-bold text-corporate-navy mt-6 mb-4 flex items-center gap-2 border-b pb-2">
-          <AlertTriangle className="h-5 w-5" /> 2.5g Conclusión sobre el ambiente de control
+          <AlertTriangle className="h-5 w-5" /> 2.5 Conclusión sobre el ambiente de control
         </h3>
         <p className="mb-4">
           El ambiente de control de Crédito Fácil S.A. presenta un <strong>diseño de gobierno sólido en su dimensión estructural</strong>: la ubicación de TI en el organigrama garantiza independencia, la segregación de funciones está formalizada e incluye el esquema maker-checker de Tesorería, el CISO cuenta con designación formal y línea de reporte propia, la revocación de accesos ante desvinculación opera de manera automatizada y verificada, y la metodología de gestión de riesgos de TI está aprobada y con propietarios asignados.
